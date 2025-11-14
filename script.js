@@ -1,5 +1,16 @@
-/* 1. Write a higher-order function `runTwice(fn)` that
-takes another function and executes it two times.
+// 1. Write a higher-order function `runTwice(fn)` that
+// takes another function and executes it two times.
+
+function runTwice(fn) {
+  fn();
+  fn();
+}
+
+runTwice(function () {
+  console.log("This is easy!");
+});
+
+/* 
 2. Create one pure function that always returns the
 same output for a given input, and one impure
 function using a global variable.
