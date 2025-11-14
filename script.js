@@ -1,22 +1,72 @@
 // 1. Write a higher-order function `runTwice(fn)` that
 // takes another function and executes it two times.
 
-function runTwice(fn) {
+/* function runTwice(fn) {
   fn();
   fn();
 }
 
 runTwice(function () {
   console.log("This is easy!");
-});
+}); */
+
+// 2. Create one pure function that always returns the
+// same output for a given input, and one impure
+// function using a global variable.
+
+/* function add(a, b) {
+  console.log(a + b);
+}
+
+add(1, 3);
+add(1, 3);
+
+let counter = 0;
+function abcd(a) {
+  counter++;
+  console.log(counter + a);
+}
+
+abcd(1);
+abcd(1); */
+
+
+// 3. Write a function that uses object destructuring
+// inside parameters to extract and print `name` and
+// `age`.
+
+/* function oDes({name, age}) {
+    console.log(name, age);
+}
+
+oDes({name: "Abhijeet", age: 21,}); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 
-2. Create one pure function that always returns the
-same output for a given input, and one impure
-function using a global variable.
-3. Write a function that uses object destructuring
-inside parameters to extract and print `name` and
-`age`.
+
+
 4. Demonstrate the difference between normal
 function and arrow function when used as object
 methods (the `this` issue).
